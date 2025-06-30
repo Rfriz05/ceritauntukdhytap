@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baju yang sama, Tempat yang berbeda</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      color: #ffffff;
+      padding: 24px;
+      max-width: 720px;
+      margin: auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    video.background-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: -10;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg, rgba(20, 0, 30, 0.6), rgba(10, 0, 20, 0.8));
+      z-index: -5;
+    }
+
+    h1 {
+      font-size: 30px;
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    p {
+      line-height: 1.8;
+      margin-bottom: 20px;
+      font-size: 16px;
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    .footnote {
+      font-style: italic;
+      color: #cccccc;
+      margin-top: 40px;
+      text-align: center;
+      font-size: 15px;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .planet {
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      position: absolute;
+      animation: rotate 60s linear infinite;
+      opacity: 0.6;
+    }
+
+    .mercury { background: #aaa; top: 10%; left: 10%; animation-delay: 0s; }
+    .venus   { background: #c2b280; top: 20%; left: 70%; animation-delay: 5s; }
+    .earth   { background: #3a9ad9; top: 40%; left: 20%; animation-delay: 10s; }
+    .mars    { background: #b22222; top: 50%; left: 80%; animation-delay: 15s; }
+    .jupiter { background: #d2b48c; top: 60%; left: 15%; animation-delay: 20s; }
+    .saturn  { background: #f5deb3; top: 70%; left: 65%; animation-delay: 25s; }
+    .uranus  { background: #66cccc; top: 30%; left: 30%; animation-delay: 30s; }
+    .neptune { background: #4169e1; top: 80%; left: 40%; animation-delay: 35s; }
+
+    @keyframes rotate {
+      0% { transform: translateX(0) rotate(0deg); }
+      100% { transform: translateX(100px) rotate(360deg); }
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 18px;
+      }
+      h1 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🎥 Video Background -->
+  <video class="background-video" autoplay muted loop playsinline>
+    <source src="https://res.cloudinary.com/di1nya7gu/video/upload/v1751269745/behqr6u6rttstcekl8fa.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="overlay"></div>
+
+  <!-- 🪐 Planet Animations -->
+  <div class="planet mercury"></div>
+  <div class="planet venus"></div>
+  <div class="planet earth"></div>
+  <div class="planet mars"></div>
+  <div class="planet jupiter"></div>
+  <div class="planet saturn"></div>
+  <div class="planet uranus"></div>
+  <div class="planet neptune"></div>
+
+  <!-- 📝 Text Content -->
+  <h1>Baju yang sama, Tempat yang berbeda</h1>
+
+  <p>Awalnya aku cuma ingin jadi teman ngobrol yang ringan,  
+  yang bisa nemenin kamu pulang kerja dengan cerita-cerita receh,  
+  atau sekadar kirim emot senyum pipi merah.</p>
+
+  <p>Tapi pelan-pelan, aku mulai merasa ingin lebih sering ada —  
+  tanpa tahu apakah kamu juga merasa yang sama.</p>
+
+  <p>Aku sadar, kamu punya banyak hal yang belum selesai.  
+  Luka yang belum kering, cerita lama yang masih numpang tinggal.  
+  Dan aku nggak pernah datang untuk ngeburu kamu buat sembuh,  
+  aku cuma pengin duduk di dekat kamu,  
+  tanpa maksa kamu cerita apa pun.</p>
+
+  <p>Cuma ya, kadang perasaan itu jalan sendiri.  
+  Nggak minta izin, nggak tahu aturan.  
+  Tiba-tiba aku jadi pengin tahu kabar kamu lebih dulu,  
+  takut kalau kamu capek tapi nggak bilang,  
+  takut kamu lagi sedih tapi nggak ada yang dengerin.</p>
+
+  <p>Mungkin aku yang terlalu jauh melangkah,  
+  sementara kamu masih berdiri di tempat yang sama.  
+  Dan aku nggak nyalahin kamu atas itu.  
+  Kita emang beda langkah, beda kesiapan.</p>
+
+  <p>Aneh banget aku sampe bisa berfikir, mungkin kita bakal nulis cerita bareng wkwk.   
+  Tapi, Ternyata aku yang nulis, kamu cuma lewat di satu paragraf.</p> 
+
+  <p>Tapi gak apa-apa kok.   
+  Rasa ini tetap aku simpan baik-baik.  
+  Bukan buat bikin kamu gak nyaman,  
+  tapi supaya aku ingat,  
+  bahwa pernah ada seseorang yang aku doain diam-diam,  
+  meski gak harus memiliki.</p> 
+
+  <p>Cepat sembuh ya.  
+  Semoga hatimu nemu pelukannya sendiri,  
+  yang bikin tenang tanpa banyak alasan.</p>
+
+  <p>Aku gak kemana-mana.  
+  Cuma lagi belajar mengerti,   
+  tanpa harus sepenuhnya pergi.</p>
+
+  <div class="footnote">– Baju yang sama, Tempat yang berbeda</div>
+</body>
+</html>
